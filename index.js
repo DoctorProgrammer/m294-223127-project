@@ -1,10 +1,8 @@
-let taskData;
-
 function createCell(text, classname) {
     const cell = document.createElement('div');
     cell.setAttribute("class", classname);
     const p = document.createElement('p');
-    p.innerText = text;
+    p.innerHTML = text;
     cell.appendChild(p);
     return cell;
 }
@@ -14,7 +12,7 @@ function renderTasks(taskData) {
     taskData.forEach(element => {
         const tableRow = document.createElement('tr'); //create
         tableRow.setAttribute("class", "tr")
-        tableRow.append(createCell(taskData[0].id, "taskDivId"), createCell(taskData[0].title, "taskDivTitle"), createCell(taskData[0].completed, "taskDivCompleted"));
+        tableRow.append(createCell(element.id, "taskDivId"), createCell(element.title, "taskDivTitle"), createCell(element.completed, "taskDivCompleted"));
         tableBody.appendChild(tableRow);
     });
 }
@@ -32,7 +30,7 @@ function indexTask () {
     fetch("http://localhost:3000/tasks")
     .then((response) => response.json())
     .then((data) => {
-        taskData = data;
+        let taskData = data;
         return renderTasks(taskData);
     })
 }
@@ -63,5 +61,5 @@ document.addEventListener("DOMContentLoaded", () => {
     ToDoListForm.addEventListener("submit", (event) => {
         event.preventDefault();
         findTask(document.getElementsByTagName("input")[0].value);
-    })
+    });
 });

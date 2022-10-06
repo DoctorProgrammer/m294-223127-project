@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="app-style.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="create.js"></script>
+    <script type="text/javascript" src="delete.js"></script>
     <title>Startseite</title>
 </head>
 <body>
@@ -41,26 +43,45 @@
 
     <main>
         <div id="maindiv">
-            <h1>Meine ToDo-List</h1>
-            <form id="ToDoListForm">
-                <label for="identifierInput">Aufgaben-ID</label>
-                <input type="text" name="identifier" id="identifierInput" required />
-                <button type="submit">Abfrage starten</button>
-            </form>
-            <h2>Meine Aufgaben:</h2>
+            <div class="forms">
+                <div>
+                    <h1>Meine ToDo-List</h1>
+                    <form id="ToDoListForm">
+                        <label for="identifierInput">Aufgaben-ID</label>
+                        <input type="number" name="identifier" id="identifierInput" required />
+                        <button type="submit">Abfrage starten</button>
+                    </form>
+                </div>
+                <div>
+                    <h1>Aufgabe Erstellen</h1>
+                    <form id="createForm">
+                        <label for="titleInput">Titel</label>
+                        <input type="text" name="title" id="titleInput" />
+                        <button type="submit">Aufgabe erstellen</button>
+                    </form>
+                </div>
+                <div>
+                    <h1>Aufgabe Löschen</h1>
+                    <form id="deleteForm">
+                        <label for="idInput">Aufgaben-ID</label>
+                        <input type="number" name="identifier" id="idInput" />
+                        <button type="submit">Aufgabe Löschen</button>
+                    </form>
+                </div>
+            </div>
             <div id="tasks">
                 <table>
                     <thead>
                         <td class="taskHolder">
                             <div class="taskDivId">
-                                <p>ID</p>
+                                <p><b>ID:</b></p>
                             </div>
                             <div class="taskDivTitle">
-                                <p>Titel</p>
+                                <p><b>Meine Aufgaben:</b></p>
                             </div>
                             <div class="taskDivCompleted">
                                 <p>
-                                    <label for="taskCompletedCheckbox">Completed</label>
+                                    <label for="taskCompletedCheckbox"><b>Beendet:</b></label>
                                 </p>
                             </div>
                         </td>
@@ -76,9 +97,9 @@
     <footer>
         <div>
             <h3>Kontakt Webseite</h3>
-            <a href="https://www.instagram.com/" target="_blank"><img width="20%" src="pictures/instagram.png" /></a>
-            <a href="https://twitter.com/" target="_blank"><img width="20%" src="pictures/twitter.webp" /></a>
-            <a href="mailto:info.quizz@gmail.com" target="_blank"><img width="20%" src="pictures/gmail.jpg" /></a>
+            <a href="https://www.instagram.com/" target="_blank"><img width="20%" src="pictures/instagram.png" alt="Bild"/></a>
+            <a href="https://twitter.com/" target="_blank"><img width="20%" src="pictures/twitter.webp" alt="Bild"/></a>
+            <a href="mailto:info.quizz@gmail.com" target="_blank"><img width="20%" src="pictures/gmail.jpg" alt="Bild"/></a>
         </div>
         <div>
             <h3>Impressum</h3>
@@ -90,7 +111,7 @@
         </div>
         <div>
             <h3>FooterTitel</h3>
-            <p>Diese Webseite ist ein Schulprojekt und befindet sich aktuell in der Entwicklungsphase. Das Ziel der Webseite ist es, eine Alternative von Quizlet zu machen, welche völlig Werbe- und Kostenfrei ist.</p>
+            <p1>Diese Webseite ist ein Schulprojekt und befindet sich aktuell in der Entwicklungsphase. Das Ziel der Webseite ist es, eine Alternative von Quizlet zu machen, welche völlig Werbe- und Kostenfrei ist.</p1>
         </div>
     </footer>
 </body>

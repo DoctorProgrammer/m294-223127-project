@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="app-style.js"></script>
-    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="delete.js"></script>
     <title>Startseite</title>
 </head>
 <body>
@@ -41,9 +41,34 @@
 
     <main>
         <div id="maindiv">
+            <h1>Aufgabe Löschen</h1>
+            <form id="deleteForm">
+                <label for="idInput">Aufgaben-ID</label>
+                <input type="number" name="identifier" id="idInput" />
+                <button type="submit">Aufgabe Löschen</button>
+            </form>
+            <div id="tasks">
+                <table>
+                    <thead>
+                        <td class="taskHolder">
+                            <div class="taskDivId">
+                                <p><b>ID:</b></p>
+                            </div>
+                            <div class="taskDivTitle">
+                                <p><b>Meine Aufgaben:</b></p>
+                            </div>
+                            <div class="taskDivCompleted">
+                                <p>
+                                    <label for="taskCompletedCheckbox"><b>Beendet:</b></label>
+                                </p>
+                            </div>
+                        </td>
+                    </thead>
+                    <tbody class="taskHolder">
 
-            <!-- Main -->
-            
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
