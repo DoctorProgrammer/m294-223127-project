@@ -56,14 +56,6 @@ function findTask (taskData) {
     })
 }
 
-/*
-const createTask = (cellId, cellTitle, cellCompleted) => {
-    alert(cellId + cellTitle + cellCompleted);
-    const task = document.createElement("openscript-task");
-    task.querySelector(".taskDiv").getElementByID("taskDivId").innerText = cellId;
-}
-*/
-
 document.addEventListener("DOMContentLoaded", () => {
     indexTask();
 
@@ -71,22 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
     ToDoListForm.addEventListener("submit", (event) => {
         event.preventDefault();
         findTask(document.getElementsByTagName("input")[0].value);
-
-        /*
-        const identifierInput = document.getElementById("identifierInput");
-
-        fetch("http://localhost:3000/tasks")
-        .then((response) => {
-            return response.json();
-        })
-        .then((data) => {
-            taskData = data;
-            if(taskData) {
-                const identifierEntry = taskData.find((entry) => entry.id == identifierInput.value);
-                alert(identifierEntry.title);
-                createTask(identifierEntry.id, identifierEntry.title, identifierEntry.completed);
-            }
-        })
-        */
     })
 });
