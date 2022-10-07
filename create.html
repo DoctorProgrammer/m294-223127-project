@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="app-style.js"></script>
-    <script type="text/javascript" src="create.js"></script>
+    <script type="text/javascript" src="create.js">
+        indexTask();
+    </script>
     <title>Aufgabe Erstellen</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
             <div class="navbar__container">
-                <a href="#home" id="navbar__logo">m294-Projekt</a>
+                <a href="index.html" id="navbar__logo">m294-Projekt</a>
                 <div class="navbar__toggle" id="mobile-menu">
                     <span class="bar"></span> <span class="bar"></span>
                     <span class="bar"></span>
@@ -39,7 +41,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="background">
         <div id="maindiv">
             <h1>Aufgabe Erstellen</h1>
             <form id="createForm">

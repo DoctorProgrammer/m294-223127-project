@@ -11,10 +11,8 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-main {
     min-height: 500px;
+    text-align: center;
 }
 
 footer {
@@ -45,6 +43,10 @@ p {
     margin-top: 1rem;
 }
 
+h1 {
+    margin: 1rem;
+}
+
 h3 {
     color: #ffffff;
     padding: 10px;
@@ -67,6 +69,7 @@ h3 {
 
 .forms > div > form {
     align-self: baseline;
+    margin: 1rem;
 }
 
 .tr {
@@ -105,9 +108,18 @@ h3 {
     background-color: lightgrey;
 }
 
+#background {
+    background-image: url("/pictures/bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
 #maindiv {
-    width: 80%;
+    width: 90%;
     margin: 2rem;
+    opacity: 100%;
+    background-color: #e6e6e6b6;
 }
 
 #maindivLogin {
