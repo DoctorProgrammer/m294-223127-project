@@ -17,15 +17,6 @@ main {
     min-height: 500px;
 }
 
-#maindiv {
-    width: 80%;
-    margin: 2rem;
-}
-
-#tasks {
-    margin: 1rem;
-}
-
 footer {
     background-color: #131313;
     display: flex;
@@ -44,12 +35,19 @@ table {
     width: 100%;
 }
 
-.taskHolder {
+tbody {
     display: flex;
-    align-items: center;
-    justify-content: left;
-    height: auto;
-    background-color: #FFFFFF;
+    flex-direction: column;
+}
+
+p {
+    height: 40px;
+    margin-top: 1rem;
+}
+
+h3 {
+    color: #ffffff;
+    padding: 10px;
 }
 
 .forms {
@@ -59,13 +57,16 @@ table {
     width: 100%;
 }
 
-.forms > div > form {
-    align-self: baseline;
+.taskHolder {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: auto;
+    background-color: #FFFFFF;
 }
 
-tbody {
-    display: flex;
-    flex-direction: column;
+.forms > div > form {
+    align-self: baseline;
 }
 
 .tr {
@@ -98,23 +99,33 @@ tbody {
     width: 20%;
     height: 100%;
     background-color: lightgrey;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .taskDelete {
     background-color: lightgrey;
 }
 
-p {
-    height: 40px;
-    margin-top: 1rem;
+#maindiv {
+    width: 80%;
+    margin: 2rem;
 }
 
-h3 {
-    color: #ffffff;
-    padding: 10px;
+#maindivLogin {
+    width: 80%;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+}
+
+#tasks {
+    margin: 1rem;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar {
