@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="text/javascript" src="app-style.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="create.js"></script>
-    <script type="text/javascript" src="delete.js"></script>
     <title>Startseite</title>
 </head>
 <body>
@@ -20,9 +18,9 @@
                     <span class="bar"></span> <span class="bar"></span>
                     <span class="bar"></span>
                 </div>
-                <ul class="navbar__menu">
+                <ul class="navbar__menu loggedIn">
                     <li class="navbar__item">
-                        <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                        <a href="edit.html" class="navbar__links" id="edit-page">Edit</a>
                     </li>
                     
                     <li class="navbar__item">
@@ -34,14 +32,14 @@
                     </li>
 
                     <li class="navbar__btn">
-                        <a href="login.html" class="button" id="login">Log In</a>
+                        <a href="logout.html" class="button" id="login">Log Out</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
     <main id="background">
-        <div id="maindiv">
+        <div id="maindiv" class="loggedIn">
             <div class="forms">
                 <div>
                     <h1>Aufgabe Suchen</h1>
@@ -90,6 +88,16 @@
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div id="logindiv">
+            <h1>Anmelden</h1>
+            <form id="loginForm">
+                <label for="eMailInput">E-Mail</label>
+                <input type="email" name="eMail" id="eMailInput" required />
+                <label for="passwordInput">Passwort</label>
+                <input type="password" name="password" id="passwordInput" required />
+                <button type="submit">Abfrage starten</button>
+            </form>
         </div>
     </main>
 
