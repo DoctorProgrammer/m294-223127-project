@@ -1,0 +1,39 @@
+Testfall #1:
+Tester:                   Robin Nicola Trachsel
+Testfall:                 Task erstellen (createTask())
+Testdaten:                "Example Task"
+Auszuführende Schritte:   Task erstellen + Seite neu Laden
+Erwartetes Ergebnis:      Task wird erstellt und mit in einer Liste von allen Tasks angezeigt
+Ergebnis:                 Task wird erstellt und mit in einer Liste von allen Tasks angezeigt
+
+Testfall #2:
+Tester:                   Robin Nicola Trachsel
+Testfall:                 Task löschen (deleteTask())
+Testdaten:                "1"
+Auszuführende Schritte:   Task löschen + Seite neu Laden
+Erwartetes Ergebnis:      Task mit dieser ID wird gelöscht und in einer Liste von allen Tasks angezeigt
+Ergebnis:                 Task mit dieser ID wird gelöscht und in einer Liste von allen Tasks angezeigt
+
+Testfall #3:
+Tester:                   Robin Nicola Trachsel
+Testfall:                 Task bearbeiten (editTask())
+Testdaten:                "1" "Example Task" "erledigt"
+Auszuführende Schritte:   Task mit dieser ID wird bearbeitet + Seite neu Laden
+Erwartetes Ergebnis:      Task mit dieser ID wird bearbeitet und in einer Liste von allen Tasks angezeigt
+Ergebnis:                 Task mit dieser ID wird bearbeitet und in einer Liste von allen Tasks angezeigt
+
+Testfall #4:
+Tester:                   Robin Nicola Trachsel
+Testfall:                 Login
+Testdaten:                "robin@email.test" "m294"
+Auszuführende Schritte:   E-Mail eingeben (mit @) + Passwort eingeben und Index anzeigen
+Erwartetes Ergebnis:      Seite wird neu angezeigt und der Inhalt sollte ersichtlich sein
+Ergebnis:                 Seite wird neu angezeigt und der Inhalt ist ersichtlich sein
+
+Testfall #5:
+Tester:                   Robin Nicola Trachsel
+Testfall:                 Task mit button Löschen (deleteTask())
+Testdaten:                ""
+Auszuführende Schritte:   Task löschen + Seite neu Laden
+Erwartetes Ergebnis:      Task wird gelöscht und mit in einer Liste von allen Tasks angezeigt
+Ergebnis:                 Task wird gelöscht und mit in einer Liste von allen Tasks angezeigt
